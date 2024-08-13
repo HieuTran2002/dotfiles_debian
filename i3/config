@@ -9,6 +9,7 @@ set $mod Mod1
 exec nitrogen --restore &
 exec compton &
 exec xrandr --output eDP-1 --brightness 0.8
+exec tlp bat
 # exec redshift &
 
 
