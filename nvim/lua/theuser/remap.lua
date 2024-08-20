@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 
-
 vim.keymap.set("n", "<leader>v", ":Ex<CR>")
 vim.keymap.set("n", "<leader>w", ":w<CR>")
 vim.keymap.set("n", "<leader>q", ":q<CR>")
@@ -19,8 +18,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- explorer
-vim.keymap.set("n", "<leader>e", ":Vex!<CR>")
-
+vim.keymap.set("x", "<leader>e", ":Vex!<CR>")
 
 vim.api.nvim_set_keymap('n', '<leader>lf', '^', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>le', '$', { noremap = true, silent = true })

@@ -26,4 +26,4 @@ wallpaper=~/Pictures/wallpapers
 rust=/media/theuser/mount/documents/Code/rust
 dl=/home/theuser/Downloads
 java=/media/theuser/mount/documents/Code/java
-
+alias=/home/theuser/.config/.aliases

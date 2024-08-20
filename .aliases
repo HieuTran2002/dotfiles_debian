@@ -39,13 +39,6 @@ alias purge="sudo apt purge"
 alias install="sudo apt install"
 alias update="sudo apt update"
 
-
-## code
-
-## copy current path
-
-# service control
-
 # tmux redefine
 alias tmux-config="tmux new-session -c ~/.config -s config"
 alias tmux-main="tmux new-session -s Main"
@@ -54,8 +47,6 @@ alias tmux-go="tmux new-session -c /media/theuser/mount/Documents/Code/go -s Go-
 alias tmux-reattact="tmux a -t "
 alias tmux-python="tmux new-session -c /media/theuser/mount/Documents/Code/python -s Python-with-me" 
 
-# golang
-alias getgo="export PATH=$PATH:/usr/local/go/bin"
 
 # get python virtual enviroment
 alias sourcepython="source /media/theuser/mount/documents/Code/python/env/bin/activate"
@@ -68,4 +59,3 @@ alias topmem="top -o %MEM -E g"
 
 # python
 alias py="python3"
-
