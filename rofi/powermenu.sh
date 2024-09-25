@@ -70,7 +70,7 @@ run_cmd() {
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
-			i3lock -i ~/Pictures/wallpapers/tensura2_1920x1080.png | systemctl suspend
+			i3lock -i ~/Pictures/miyu.png | systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
 			if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
 				openbox --exit

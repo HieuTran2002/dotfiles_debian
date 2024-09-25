@@ -13,6 +13,6 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 
 require('telescope').setup{ 
     defaults = { 
-        file_ignore_patterns = {"__pycache__", "env", } 
+        file_ignore_patterns = {"__pycache__", "env", "build"} 
     } 
 }

@@ -14,7 +14,6 @@ alias mount-usb="sudo mount /dev/sdb1 /media/theuser/mount/USB"
 # app
 alias nv="nvim"
 
-
 #bluetooth
 alias blue-on="sudo systemctl start bluetooth.service"
 alias blue-off="sudo systemctl stop bluetooth.service"
@@ -22,12 +21,11 @@ alias blue-off="sudo systemctl stop bluetooth.service"
 # nmcli 
 alias nets="nmcli con show"
 alias netu="nmcli con up"
-alias netl="nmcli dev wifi rescan ; nmcli dev wifi list"
+alias netr="nmcli dev wifi rescan ; nmcli dev wifi list"
 alias netc="nmcli dev wifi connect "
 
 # auto-cpufreq
 alias cpu="sudo auto-cpufreq --stats"
-
 
 # ls
 alias l="lsd -a"
@@ -38,21 +36,7 @@ alias lsl="ls -trh"
 alias purge="sudo apt purge"
 alias install="sudo apt install"
 alias update="sudo apt update"
-
-# tmux redefine
-alias tmux-config="tmux new-session -c ~/.config -s config"
-alias tmux-main="tmux new-session -s Main"
-alias tmux-cpp="tmux new-session -c /media/theuser/mount/Documents/Code/Cpp -s Cpp-with-me \; split-window -dh -p 30"
-alias tmux-go="tmux new-session -c /media/theuser/mount/Documents/Code/go -s Go-with-me \; split-window -dh -p 30"
-alias tmux-reattact="tmux a -t "
-alias tmux-python="tmux new-session -c /media/theuser/mount/Documents/Code/python -s Python-with-me" 
-
-
-# get python virtual enviroment
-alias sourcepython="source /media/theuser/mount/documents/Code/python/env/bin/activate"
-
-# pulseaudio
-alias unmute="amixer set Master unmute"
+alias upgrade="sudo apt upgrade"
 
 # check memory usage
 alias topmem="top -o %MEM -E g"

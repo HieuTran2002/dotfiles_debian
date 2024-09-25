@@ -25,7 +25,7 @@ local cmp_action = require('lsp-zero').cmp_action()
 cmp.setup({
 	mapping = cmp.mapping.preset.insert({
 		-- `Enter` key to confirm completion
-		['<CR>'] = cmp.mapping.confirm({select = false}),
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
 
 		-- Ctrl+Space to trigger completion menu
 		['<C-Space>'] = cmp.mapping.complete(),
@@ -39,7 +39,7 @@ cmp.setup({
 		['<C-d>'] = cmp.mapping.scroll_docs(4),
 
         -- Auto completion navigation
-        ['<C-j>'] = cmp.mapping.select_next_item(),
-        ['<C-k>'] = cmp.mapping.select_prev_item()
+        ['<C-k>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
+        ['<C-j>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
 	})
 })

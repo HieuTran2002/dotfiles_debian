@@ -22,3 +22,6 @@ vim.keymap.set("x", "<leader>e", ":Vex!<CR>")
 
 vim.api.nvim_set_keymap('n', '<leader>lf', '^', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>le', '$', { noremap = true, silent = true })
+
+
+vim.keymap.set('x', '<C-i>', [[:s/\d\+/\=line('.')-line("'<")]])

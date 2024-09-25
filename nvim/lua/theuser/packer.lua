@@ -1,5 +1,4 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 -- Only required if you have packer configured as `opt
 
 vim.cmd [[packadd packer.nvim]]
@@ -11,10 +10,6 @@ return require('packer').startup(function(use)
     -- catppuccin theme:
     use { "catppuccin/nvim", as = "catppuccin" }
 
-    -- Dracula theme:
-    use {
-        'maxmx03/dracula.nvim',
-    }
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.5',
@@ -66,19 +61,12 @@ return require('packer').startup(function(use)
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     }
-    --- cmp
-    use{
-        "hrsh7th/nvim-cmp"
-    }
+
+
 
     --- vim tmux navigator
     use {'christoomey/vim-tmux-navigator'}
 
-    --- debugger
-    -- use { 'mfussenegger/nvim-dap', }
-    -- use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
-    -- use 'theHamsta/nvim-dap-virtual-text'
-    -- use { "jay-babu/mason-nvim-dap.nvim", opts = { handlers = {}, ensure_installed = { "codelldb", } } }
 
     --- auto pair
     use {
@@ -101,5 +89,14 @@ return require('packer').startup(function(use)
     use { "lukas-reineke/indent-blankline.nvim" }
 
     use {"debugloop/telescope-undo.nvim"}
+
+    use { "L3MON4D3/LuaSnip"}
+    use { "rafamadriz/friendly-snippets" }
+
+    use { 'hrsh7th/nvim-cmp' }
+
+    use { "hrsh7th/cmp-cmdline" }
+
+    use { 'saadparwaiz1/cmp_luasnip' }
 
 end)

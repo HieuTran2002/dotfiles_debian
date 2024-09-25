@@ -18,7 +18,7 @@ start_session() {
             tmux new-session -s "$session_name" -n "Term" \; new-window -n "Tensura" \; select-window -t 1
             ;;
         "cwm" | "python-with-me" | "cpp-with-me" | "web-with-me")
-            tmux new-session -s "$session_name" -n "Term" \; new-window -n "Neovim"\; select-window -t 1
+            tmux new-session -s "$session_name" -n "Nvim" \; new-window -n "Term"\; select-window -t 1
             ;;
         *)
             echo "Unknown session: $session_name"
