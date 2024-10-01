@@ -25,3 +25,10 @@ vim.api.nvim_set_keymap('n', '<leader>le', '$', { noremap = true, silent = true 
 
 
 vim.keymap.set('x', '<C-i>', [[:s/\d\+/\=line('.')-line("'<")]])
+
+-- F7 -> Rebuild
+vim.api.nvim_set_keymap('n', '<F7>', ':!make build<CR>', { noremap = true, silent = true })
+
+-- F8 -> Flash
+vim.api.nvim_set_keymap('n', '<F8>', ':!make flash<CR>', { noremap = true, silent = true })
+
