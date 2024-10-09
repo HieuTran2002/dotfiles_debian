@@ -4,7 +4,13 @@ export PATH=$PATH:/usr/sbin
 export PATH=/home/theuser/gcc-arm-none-eabi/bin:$PATH
 export PATH=/home/theuser/stlink/bin:$PATH
 export PATH=/home/theuser/neovim/build/bin:$PATH
+
+# gitui
 export PATH=/home/theuser/gitui/release:$PATH
+
+# go
+# export PATH=/usr/local/kitty/launcher:$PATH
+export PATH=/usr/local/go/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

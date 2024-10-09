@@ -9,14 +9,14 @@ return require('packer').startup(function(use)
 
     -- theme:
     use { "catppuccin/nvim", as = "catppuccin" }
-    use { 'projekt0n/github-nvim-theme' }
     use { 'bluz71/vim-moonfly-colors' }
+    use {'nyoom-engineering/oxocarbon.nvim'}
+    use "EdenEast/nightfox.nvim"
 
 
 
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
-        -- or                            , branch = '0.1.x',
+        'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 

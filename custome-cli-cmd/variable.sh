@@ -5,6 +5,7 @@ cf_tmux=~/.config/tmux/tmux.conf
 cf_i3=~/.config/i3/config
 cf_i3blocks=~/.config/i3blocks/config
 cf_compton=~/.config/compton.conf
+cf_kitty=~/.config/kitty/kitty.conf
 zsh=~/.config/.zshrc
 
 # dir
