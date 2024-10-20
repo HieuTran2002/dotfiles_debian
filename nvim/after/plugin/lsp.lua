@@ -15,6 +15,7 @@ require('lspconfig').pylsp.setup({})
 require('lspconfig').clangd.setup({})
 require('lspconfig').gopls.setup({})
 require('lspconfig').jdtls.setup({})
+require('lspconfig').zls.setup({})
 
 --- CMP only
 

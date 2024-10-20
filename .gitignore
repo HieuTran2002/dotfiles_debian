@@ -5,6 +5,11 @@
 !custome-cli-cmd/
 !gtk-3.0/
 !i3/
+
+!sway/
+!wofi/
+!waybar/
+
 !i3blocks/
 !rofi/
 !.aliases

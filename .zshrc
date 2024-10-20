@@ -5,6 +5,13 @@ export PATH=/home/theuser/gcc-arm-none-eabi/bin:$PATH
 export PATH=/home/theuser/stlink/bin:$PATH
 export PATH=/home/theuser/neovim/build/bin:$PATH
 
+# Zig
+export PATH=/home/theuser/zig-linux-x86_64-0.13.0:$PATH
+
+# Goland
+export GOPATH=$HOME/go
+
+
 # gitui
 export PATH=/home/theuser/gitui/release:$PATH
 

@@ -33,10 +33,11 @@ alias lsh="ls -hSr"
 alias lsl="ls -trh" 
 
 # apt 
-alias purge="sudo apt purge"
-alias install="sudo apt install"
-alias update="sudo apt update"
-alias upgrade="sudo apt upgrade"
+alias purge="sudo nala purge"
+alias install="sudo nala install"
+alias update="sudo nala update"
+alias upgrade="sudo nala upgrade"
+alias search="sudo nala search"
 
 # check memory usage
 alias topmem="top -o %MEM -E g"

@@ -12,9 +12,11 @@ vim.keymap.set('n', '<leader>lf', builtin.diagnostics, {})
 
 vim.keymap.set('n', '<leader>bb', builtin.buffers, {})
 
+vim.keymap.set('n', '<leader>tl', ":Telescope<CR>", {})
 
-require('telescope').setup{ 
-    defaults = { 
+
+require('telescope').setup{
+    defaults = {
         file_ignore_patterns = {"__pycache__", "env", "build"},
         mappings = {
             i = {
@@ -23,6 +25,16 @@ require('telescope').setup{
                 ["<C-j>"] = actions.move_selection_next,
                 ["<C-k>"] = actions.move_selection_previous,
             },
+        },
+        border = {
+            prompt = { 1, 1, 1, 1 },
+            results = { 1, 1, 1, 1 },
+            preview = { 1, 1, 1, 1 },
+        },
+        borderchars = {
+            prompt = { " ", " ", "─", "│", "│", " ", "─", "└" },
+            results = { "─", " ", " ", "│", "┌", "─", " ", "│" },
+            preview = { "─", "│", "─", "│", "┬", "┐", "┘", "┴" },
         }
-    } 
+    }
 }
